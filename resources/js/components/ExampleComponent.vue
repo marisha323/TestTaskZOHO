@@ -16,11 +16,12 @@
                                 <label for="agreementStage">Етап угоди:</label>
                                     <select id="agreementStage" name="agreementStage" v-model="form.agreementStage" required class="form-select" aria-label="Default select example">
                                         <option selected>Open this select menu</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
+                                        <option value="Початок переговорів">Початок переговорів</option>
+                                        <option value="Обговорення умов">Обговорення умов</option>
+                                        <option value="Узгодження умов">Узгодження умов</option>
+                                        <option value="Підготовка документації">Підготовка документації</option>
+                                        <option value="Підписання">Підписання</option>
                                     </select>
-
                                 </div>
 
                                 <button type="submit" class="btn btn-info alert-primary m-sm-2">Відправити</button>

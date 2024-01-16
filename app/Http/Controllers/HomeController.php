@@ -12,6 +12,7 @@ class HomeController extends Controller
      *
      * @return void
      */
+
     public function __construct()
     {
         $this->middleware('auth');
@@ -89,7 +90,7 @@ class HomeController extends Controller
                     'data' => [
                         [
                             'Deal_Name' => $data['agreementName'],
-                            'Stage' => 'Qualification2',
+                            'Stage' => $data['agreementStage'],
                         ],
                     ],
                 ],
@@ -103,7 +104,7 @@ class HomeController extends Controller
     function generate()
     {
         $post = [
-            'code' => '1000.b8c5650c9e927cf38aaba5744db313ec.54000c1bec12458d32f4760df8736aad',
+            'code' => '1000.7df12652d2aaa54b5bad072206a21990.021d48122ae754d5db3ea925cb3a6c38',
             'redirect_uri' => 'http://127.0.0.1:8000/index',
             'client_id' => '1000.4HN56FRSAQFPEL2L8EETN3Q9J1RKJG',
             'client_secret' => '438dd8acfbdf59ddc138dc4db54b4edfffddd867fb',
